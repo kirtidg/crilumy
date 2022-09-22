@@ -1,0 +1,20 @@
+{
+  "name": "new_project_tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build:tailwinds": "tailwind build dist/style.css -o public/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.3",
+    "sass": "^1.54.9",
+    "vite": "^3.1.3"
+  }
+}

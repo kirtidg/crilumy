@@ -1,0 +1,86 @@
+$primary-color: #00a6db;
+$secondary-color: #f5f5f5;
+$font-color: #003756;
+
+@mixin bgPosition{
+    height:100vh;
+    background-position: center center
+}
+
+
+
+p,h1,h2,h3,h4,a,span{font-family: 'Inter';}
+
+/* navbar css end */
+nav{
+    .active{
+        background:#b8e6f5
+    }
+    .header__button{
+        a{
+            background:$primary-color;
+        }
+    }
+}
+.mobile-menu-button{padding-right:15px;}
+.main-banner 
+{
+@include bgPosition;
+}
+
+/* cards css end */
+.cards__footer{
+    border-top:1px solid $primary-color;}
+
+
+/* icons css*/
+.blue_icon:before
+{
+    color:$primary-color;
+}
+.grey_icon:before
+{
+    color:#d9d9d9;
+}
+
+
+/*footer css start */
+.footer{
+    background:$primary-color;
+    .footer__section3{
+        button{background:#003756;}
+    }
+    button{
+        margin-left:-1px;
+
+    }
+}
+
+
+/* media */
+@media(max-width:767px)
+{
+    .main-banner
+    {
+        height:33vh;
+    }
+    .page, .footer
+    {
+        padding-left:40px;
+        padding-right:40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .navbar__menu {
+        a{
+            font-size:12px !Important;
+            padding-left:5px !important;padding-right:5px !important;
+        }
+    }
+    .main-banner
+    {
+        height:55vh;
+    } 
+}
